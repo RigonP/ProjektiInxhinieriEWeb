@@ -95,7 +95,7 @@ function validateNameR(){
 
 
   if(name.length == 0){
-    RnameError.innerHTML = "<span style='color: red'>Emri duhet të plotësohet !</span>";
+    RnameError.innerHTML = "Emri duhet të plotësohet !";
       return false;
   }
   if(name.match(' ')){
