@@ -144,3 +144,48 @@ function validateEmailR(){
     RPass_error.innerHTML = "<span style='color: green'>Fjalëkalimi është në rregull!</span>";
     return true;
   }
+
+
+  
+
+function validateCPasswordR(){
+    var passwordR = document.getElementById('passwordR').value;
+    var passwordCR = document.getElementById('passwordC').value;
+    
+    if(passwordCR.length < 8){
+      CpasswordError.innerHTML =  "<span style='color: red'>Fjalëkalimi duhet të jetë minimum 8 karaktere</span>";
+        return false;
+    }
+    
+    if(!passwordCR.match(/[0-9]/)){
+      CpasswordError.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një numer!</span>";
+        return false;
+    }
+  
+    if(passwordCR != passwordR){
+      CpasswordError.innerHTML = "<span style='color: red'>Fjalëkalimi nuk përputhet!</span>";
+      return false;
+    }
+  
+    CpasswordError.innerHTML = "<span style='color: green'>Fjalëkalimi është në rregull!</span>";
+    return true;
+  }
+  
+  
+  function validateButtonL(){
+    if(!validateEmail() || !validatePassword()){
+      alert("Ju nuk keni plotësuar si duhet fushat e Login Form. Ju lutem rishikoni të dhënat !");
+    }else{
+      location.href = ("..//LoginSuccess/login.html");
+    }
+  }
+  
+  
+  
+  function validateButtonR(){
+    if(!validateNameR() || !validateEmailR() || !validatePasswordR() || !validateCPasswordR()){
+      alert("Ju nuk keni plotësuar si duhet fushat e Regjistrimit. Ju lutem rishikoni të dhënat !");
+    }else{
+      location.href = ("..//LoginSuccess/login.html");
+    }
+  }
