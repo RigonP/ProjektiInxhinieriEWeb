@@ -384,7 +384,6 @@ input[type="checkbox"]{
     transition: all 0.3s ease;
   }
   
-  
   .button input:hover{
     background-color: #265df2;
   }
@@ -393,4 +392,58 @@ input[type="checkbox"]{
     margin-top: 30px;
     text-align: center;
   }
+
+
+
   
+/*Ketu fillon CSS per pjesen e punes ne fushen e mjekesise*/
+.cta{
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.heading{
+  text-align: center;
+  color: black;
+}
+
+.cta-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0px 23px 30px 30px;
+  text-align: center;
+  
+}
+
+.wrap{
+  background-color: #ffffff;
+  box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+  border-radius: 12px;
+  padding: 50px 50px 50px 50px;
+  transition: ease .40s;
+  cursor: pointer;
+
+}
+
+.wrap h3{
+  font-size: 24px;
+  font-weight: 500 ;
+  margin-bottom: 2px;
+}
+
+.wrap p{
+  font-size: var(--p-font);
+}
+
+.one{
+  background: #baebcd;
+}
+.two{
+  background: #c02f2f;
+}
+.three{
+  background: #faedce;
+}

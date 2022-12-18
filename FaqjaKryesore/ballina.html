@@ -122,5 +122,77 @@
                             <input type="text" placeholder="Emri" id="nameR" onkeyup="validateNameR()">
                             <img src="..//FaqjaKryesore/name.png" alt="name logo">
                         </div>  
+                        <span id="Rname_error"></span>
+                        <div class="input-field">
+                            <input type="text" placeholder="Email" id="emailR" onkeyup="validateEmailR()">
+                            <img class="icon"  src="..//FaqjaKryesore/email.png" alt="email logo">
+                        </div> 
+                        <span id="Remail_error"></span>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Fjalekalimi" id="passwordR" onkeyup="validatePasswordR()">
+                            <img class="icon"  src="..//FaqjaKryesore/passwordi.png" alt="email logo">
+                        </div>  
+                        <span id="RPass_error"></span>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Konfirmo fjalekalimin" id="passwordC" onkeyup="validateCPasswordR()">
+                            <img class="icon"  src="..//FaqjaKryesore/passwordi.png" alt="email logo">
+                            <img class="showHidePw" src="..//FaqjaKryesore/eyePass.png" alt="eye logo">
+                        </div>
+                        <span id="CRPass_error"></span>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Me mbaj ne mend</label>
+                            </div>
+    
+                            <a href="#" class="text">Keni harruar fjalekalimin?</a>
+                        </div>
+    
+                        <div class="input-field button">
+                            <input type="button" value="Login Now" onclick="return validateButtonR()">
+                        </div>  
+                    </form>
+    
+                    <div class="login-signup">
+                        <span class="text">Jeni te regjistruar ?
+                            <a href="#" class="text login-link">Login</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div>   
+    <script src="script.js"></script>
+    <!--Ketu perfundon pjesa e login/registration form-->
+
+
+    <!--Ketu fillon pjesa e punes, sa pacienta, certifikime etj-->
+    <div class="cta">
+        <div class="heading">
+            <h2>Klinikë e dëshmuar në fushat mjekësore</h2>
+        </div>
+
+        <div class="cta-box">
+            <div class="wrap one">
+                <h3>Cakto takim me doktorin</h3>
+                <p> +383 44 111 222</p>
+            </div>
+
+            <div class="wrap two">
+                <h3>20+</h3>
+                <p>Vizita ditore nga pacientët</p>
+            </div>
+
+            <div class="wrap three">
+                <h3>350+</h3>
+                <p>Certifikime nga Organizatat Botërore të Shëndetësisë</p>
+            </div>
+        </div>
+    </div>
+
+
+
     </body>
 </html>
