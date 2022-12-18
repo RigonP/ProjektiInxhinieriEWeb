@@ -186,6 +186,6 @@ function validateCPasswordR(){
     if(!validateNameR() || !validateEmailR() || !validatePasswordR() || !validateCPasswordR()){
       alert("Ju nuk keni plotësuar si duhet fushat e Regjistrimit. Ju lutem rishikoni të dhënat !");
     }else{
-      location.href = ("..//LoginSuccess/login.html");
+      location.href = ("..//LoginSuccess/register.html");
     }
   }
