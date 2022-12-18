@@ -447,3 +447,43 @@ input[type="checkbox"]{
 .three{
   background: #faedce;
 }
+
+
+
+/*CSS per pjesen e reminder*/
+.zbritja .reminder{
+    text-align: center;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 46, 0.7)), url(..//FaqjaKryesore/termin.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-bottom: 100px;
+  }
+  
+  .zbritja .reminder h1{
+    color: #fff;
+  }
+  .zbritja .reminder p{
+    font-size: 20px;
+  }
+  
+  .zbritja .reminder .time{
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .zbritja .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius:5px ;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
