@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -49,9 +49,8 @@ nav ul li a:hover{
   background: rgb(255, 255, 255);
 }
 
-nav .menu-btn i{
-  color: #0082e6;
-  font-size: 22px;
+nav .menu-btn img{
+  width: 30px;
   cursor: pointer;
   display: none;
 }
@@ -67,12 +66,10 @@ input[type="checkbox"]{
   }
 }
 @media (max-width: 920px) {
-  nav .menu-btn i{
+  nav .menu-btn img{
     display: block;
   }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
+
   nav ul{
     position: fixed;
     top: 80px;
@@ -107,6 +104,14 @@ input[type="checkbox"]{
     color: cyan;
   }
 }
+
+/*Shtimi i butonit login te navbar*/
+.login_btn {
+  color: #fff;
+  background: rgb(255, 0, 0);
+  transition: 0.3s ease;
+}
+
 
 
 #home{
