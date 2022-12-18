@@ -110,7 +110,7 @@ input[type="checkbox"]{
 
 
 #home{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 46, 0.7)), url(..//img/fotoBackground.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 46, 0.7)), url(..//FaqjaKryesore/fotoBackground.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -219,7 +219,7 @@ input[type="checkbox"]{
   }
   
   .registration{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 46, 0.7)), url(..//img/login-wallpaper.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 46, 0.7)), url(..//FaqjaKryesore/login-wallpaper.jpg);
     background-position: center;
     height: 100vh;
     display: flex;
