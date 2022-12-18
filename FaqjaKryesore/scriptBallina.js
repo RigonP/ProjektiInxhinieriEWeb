@@ -81,3 +81,28 @@ function validatePassword(){
   return true;
 }
 
+
+
+
+//Validimi i regjistrimit
+var RnameError = document.getElementById("Rname_error");
+var RemailError = document.getElementById("Remail_error");
+var passwordError = document.getElementById("RPass_error");
+var CpasswordError = document.getElementById("CRPass_error");
+
+function validateNameR(){
+  var name = document.getElementById('nameR').value;
+
+
+  if(name.length == 0){
+    RnameError.innerHTML = "<span style='color: red'>Emri duhet të plotësohet !</span>";
+      return false;
+  }
+  if(name.match(' ')){
+    RnameError.innerHTML = "<span style='color: red'>Emri duhet të jetë i plotë !</span>";
+      return false;
+  }
+  RnameError.innerHTML= "<span style='color: green'>Emri është në rregull!</span>";
+  return true;
+}
+
