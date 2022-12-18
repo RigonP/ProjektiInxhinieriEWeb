@@ -106,3 +106,41 @@ function validateNameR(){
   return true;
 }
 
+
+
+function validateEmailR(){
+    var emailR = document.getElementById('emailR').value;
+  
+    if(emailR.length == 0){
+      RemailError.innerHTML =  "<span style='color: red'>Gjatësia e email nuk mund të jetë zero !</span>";
+        return false;
+    }
+    if(!emailR.match('@')){
+      RemailError.innerHTML =  "<span style='color: red'>Email duhet të përmbaje @ !</span>";
+        return false;
+    }
+    if(!emailR.endsWith('.net')){
+      RemailError.innerHTML = "<span style='color: red'>Email duhet të përfundoj me .net</span>"
+        return false;
+    }
+    RemailError.innerHTML = "<span style='color: green'>Email është në rregull!</span>";
+    return true;
+}
+  
+  
+  function validatePasswordR(){
+    var passwordR = document.getElementById('passwordR').value;
+    
+    if(passwordR.length < 8){
+      RPass_error.innerHTML =  "<span style='color: red'>Fjalëkalimi duhet të jetë minimum 8 karaktere</span>";
+        return false;
+    }
+    
+    if(!passwordR.match(/[0-9]/)){
+      RPass_error.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një numer!</span>";
+        return false;
+    }
+  
+    RPass_error.innerHTML = "<span style='color: green'>Fjalëkalimi është në rregull!</span>";
+    return true;
+  }
