@@ -20,3 +20,32 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.login{
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px ;
+    color: #333;
+}
+
+
+.login h2{
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+
+@media (max-width: 800px){
+    .login{
+        width: auto;
+    }
+    .img{
+        width: 100px;
+    }
+
+}
