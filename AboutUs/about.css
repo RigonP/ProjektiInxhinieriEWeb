@@ -110,3 +110,98 @@
     background: rgb(255, 0, 0);
     transition: 0.3s ease;
   }
+  /*Ketu fillon pjesa e css per section team */
+.wrapper{
+    /*max-width: 1350px;*/
+    /*margin-top: 10%;*/
+    padding-top: 20px;
+    background-color: #f3e70a;
+    background-position: center;
+}
+
+.wrapper h1{
+    max-width: 1350px;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px; 
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.team .team_member h3{
+    color: #0082e6;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team_member p.role{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0 ;
+}
+
+.team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#fff;
+}
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1350){
+    .wrapper h1{
+        max-width: 1350px;
+        font-size: 52px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.historia{
+    background-color: #0082e6;
+    text-align: center;
+}
+
+.historia h1{
+    color: #fff;
+    padding-bottom: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+.historia p{
+    line-height: 30px;
+    text-shadow: #8e8b8b;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.historia img{
+    width: 100px;
+}
