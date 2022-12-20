@@ -205,3 +205,26 @@
 .historia img{
     width: 100px;
 }
+/*CSS per pjesen e analizave*/
+.icons-container img{
+    width: 50px;
+}
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap:1.5rem ;
+    padding: 2rem 0;
+}
+
+.icons-container .icons h3{
+    font-size: 20px;
+    padding-bottom: .5rem;
+}
+.icons-container .icons p{
+    font-size:20px
+}
