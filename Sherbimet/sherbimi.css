@@ -269,3 +269,19 @@
       margin: 10px auto;
   }
 }
+
+/*CSS per video*/
+.video h1{
+  padding-top: 10%;
+  padding-bottom: 20px;
+}
+.back-video{
+  width: 100%;
+}
+
+@media(max-width: 991px){
+  .back-video{
+      width: 100%;
+      height: auto;
+  }
+}
