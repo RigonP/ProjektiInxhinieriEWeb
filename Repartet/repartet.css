@@ -1,0 +1,16 @@
+/*CSS per pjesen repartet*/
+
+.repartet{
+    background-image:  linear-gradient(rgba(9, 5, 46, 0.7), rgba(9, 5, 46, 0.7)), url("../Repartet/hospital-interior.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+ }
+ 
+ .repartet h1{
+     transform: translateY(50%);
+     font-size: 90px;
+     text-align: center;
+     color: #fff;
+ }
+ 
