@@ -70,5 +70,38 @@
             </div>
         </div>
 
+        <!--Pjesa e Slider me 4 foto-->
+        <div class="slideshow">
+            <div class="slider">
+                <div class="images">
+                    <img src="..//Repartet/dok1.jpg" id="img"><img src="..//Repartet/doktori2.png"><img src="..//Repartet/Dok4.jpg"><img src="..//Repartet/doktori2.png">
+                </div>
+            </div>
+    
+            <div class="buttons">
+                <label onclick="showPht1()" style="text-align: center;">Kliko - Foto 1</label>
+                <label onclick="showPht2()" style="text-align: center;">Kliko - Foto 2</label>
+                <label onclick="showPht3()" style="text-align: center;">Kliko - Foto 3</label>
+                <label onclick="showPht4()" style="text-align: center;">Kliko - Foto 4</label>
+            </div>
+        </div>
+        
+        <!--Pjesa e JavaScript per slider-->
+        <script>
+            var pht1 = document.querySelector("#img");
+            function showPht1(){
+                pht1.style.marginLeft="0";
+            }
+            function showPht2(){
+                pht1.style.marginLeft="-25%";
+            }
+            function showPht3(){
+                pht1.style.marginLeft="-50%";
+            }
+            function showPht4(){
+                pht1.style.marginLeft="-75%";
+            }
+        </script>
+
 </body>
 </html>

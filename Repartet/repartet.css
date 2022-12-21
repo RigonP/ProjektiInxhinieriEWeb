@@ -89,3 +89,59 @@
     justify-content: center;
     background-color: #defdd5;
 }
+
+
+
+.slider{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+  }
+  .buttons{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .buttons label{
+    width: 100px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(56, 218, 230);
+    cursor: pointer;
+  }
+  .images{
+    width: 200%;
+    height: 25%;
+  }
+  .images img{
+    width: 25%;
+    height: 25%;
+    transition: 1s;
+  }
+  .hide{
+    display: none;
+  }
+  
+  
+  @media(max-width: 800px){
+    .repartet{
+        width: auto;
+        margin: auto;
+    }
+    .repartet h1{
+        width: auto;
+        margin: auto;
+    }
+    .container{
+        width: 50%;
+        margin:auto;
+    }
+    .slideshow{
+      width: auto;
+      margin:auto;
+    }
+  }
