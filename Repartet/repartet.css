@@ -68,3 +68,14 @@
     font-weight: 600;
     color: #333;
 }
+
+
+
+.container2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fde3ee;
+}
