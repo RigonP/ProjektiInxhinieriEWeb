@@ -7,6 +7,25 @@
       <link rel="stylesheet" href="repartet.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+        <!--Ketu fillon pjesa e header/navigation bar -->
+        <nav>
+            <div class="logo">
+               <a href="..//FaqjaKryesore/ballina.html"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <img src="..//FaqjaKryesore/menu.png" alt="" id="fotoNav">
+            </label>
+            <ul>
+                 <li><a href="..//FaqjaKryesore/ballina.html">Faqja Kryesore</a></li>
+                 <li><a href="..//AboutUs/about.html">Rreth nesh</a></li>
+                 <li><a class="active" href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
+                 <li><a href="..//Repartet/repartet.html">Reparet</a></li>
+                 <li><a href="..//Contact/contact.html">Kontakti</a></li>
+                 <li><a class="login_btn" href="..//FaqjaKryesore/ballina.html#dergoketu">Login</a></li>
+            </ul>
+        </nav>
+        <!--Ketu perfundon pjesa e header/navigation bar-->
     
         <div class="repartet">
             <h1>Repartet</h1>
@@ -79,10 +98,10 @@
             </div>
     
             <div class="buttons">
-                <label onclick="showPht1()" style="text-align: center;">Kliko - Foto 1</label>
-                <label onclick="showPht2()" style="text-align: center;">Kliko - Foto 2</label>
-                <label onclick="showPht3()" style="text-align: center;">Kliko - Foto 3</label>
-                <label onclick="showPht4()" style="text-align: center;">Kliko - Foto 4</label>
+                <label onclick="showPht1()" style="text-align: center;">Kliko - F1</label>
+                <label onclick="showPht2()" style="text-align: center;">Kliko - F2</label>
+                <label onclick="showPht3()" style="text-align: center;">Kliko - F3</label>
+                <label onclick="showPht4()" style="text-align: center;">Kliko - F4</label>
             </div>
         </div>
         
@@ -102,6 +121,56 @@
                 pht1.style.marginLeft="-75%";
             }
         </script>
+
+
+
+
+        <!--Pjesa e footer-->
+       <footer>
+        <div class="content">
+            <div class="left-box">
+                <div class="upper">
+                    <div class="topic">PRODOC KLINIKA</div>
+                    <p>Klinika ProDocs ofron shërbime cilësore në fushën e shëndetësisë, 
+                        <br> me mjekët më të mirë të vendit dhe ata amerikan.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Kontakti</div>
+                    <div class="phone">
+                        <a href="#"><img src="..//FaqjaKryesore/telephone.png" alt="">+383 44 111 222</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><img src="..//FaqjaKryesore/email.png" alt="">prodoc@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Repartet</div>
+                <div><a href="#">Emergjenca</a></div>
+                <div><a href="#">Kardiologjia</a></div>
+                <div><a href="#">Infektiva</a></div>
+                <div><a href="#">Endokrinologjia</a></div>
+                <div><a href="#">Laboratori</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe</div>
+                <form action="#">
+                    <input type="text" placeholder="Shkruani email">
+                    <input type="submit" name="" value="Send">
+                    <div class="media-icons">
+                        <a href="#"><img src="..//FaqjaKryesore/facebook.png" alt=""></a>
+                        <a href="#"><img src="..//FaqjaKryesore/instagram.png" alt=""></a>
+                        <a href="#"><img src="..//FaqjaKryesore/twitter.png" alt=""></a>
+                        <a href="#"><img src="..//FaqjaKryesore/youtube.png" alt=""></a>
+                        <a href="#"><img src="..//FaqjaKryesore/linkedin.png" alt=""></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2022 <a href="https://github.com/RigonP/ProjektiInxhinieriEWeb.git">Rigon Pira | Butrint Ostergllava </a> Te gjitha te drejtat te rezervuara</p>
+        </div>
+    </footer>
 
 </body>
 </html>
