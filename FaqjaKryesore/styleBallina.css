@@ -322,9 +322,9 @@ input[type="checkbox"]{
   }
   
   .input-field img{
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-130%);
     color: #999;
     font-size: 23px ;
     transition: all 0.2s ease;
@@ -341,6 +341,7 @@ input[type="checkbox"]{
   .input-field img.showHidePw{
     right: 0;
     cursor: pointer;
+    margin-left: 87%;
   }
   
   .form .checkbox-text{
