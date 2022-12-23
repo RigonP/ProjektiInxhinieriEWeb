@@ -222,7 +222,7 @@ body{
     margin-bottom: 10px
 }
 
-.inputBox input[type="submit"]{
+.inputBox input[type="button"]{
     background: #ff578b;
     color: #fff;
     border: none;
@@ -429,7 +429,7 @@ footer .content .right input[type="submit"]{
   transition: all 0.3s ease-in-out;
 }
 
-.content .right input[type="submit"]:hover{
+.content .right input[type="button"]:hover{
   background: none;
   color: #eb2f06
 }
