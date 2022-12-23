@@ -494,7 +494,13 @@ input[type="checkbox"]{
     font-weight: 600;
   }
   
-
+  @media (max-width: 950px){
+    .input-field img.showHidePw{
+      cursor: pointer;
+      margin-left: 87%;
+      
+    }
+  }
   
   /*CSS per pjesen e footer*/
 footer{

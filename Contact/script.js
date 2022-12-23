@@ -90,11 +90,11 @@ function validateMessage(){
 
 function validateForm(){
     if(!validateName() || !validateSurname() ||  !validatePhone() || !validateEmail() || !validateMessage()){
-        submitErorr2.style.display = 'Block';
-        //submitErorr2.innerHTML = 'Rishikoni të dhënat më lartë ! ';
+        // submitErorr2.innerHTML = 'Rishikoni të dhënat më lartë ! ';
+        alert("Ju nuk keni plotësuar si duhet fushat e kontaktit. Ju lutem rishikoni të dhënat !");
         return false;
     }else{
-        submitErorr2.innerHTML = "<span style='color: green'>Mesazhi u dërgua me sukses !</span>";
+        location.href = ("..//LoginSuccess/contactValidation.html");
         return true;
     }
 
