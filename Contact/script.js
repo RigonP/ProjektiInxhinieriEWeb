@@ -94,7 +94,7 @@ function validateForm(){
         //submitErorr2.innerHTML = 'Rishikoni të dhënat më lartë ! ';
         return false;
     }else{
-        submitErorr2.innerHTML = 'Mesazhi u dërgua me sukses ! ';
+        submitErorr2.innerHTML = "<span style='color: green'>Mesazhi u dërgua me sukses !</span>";
         return true;
     }
 
