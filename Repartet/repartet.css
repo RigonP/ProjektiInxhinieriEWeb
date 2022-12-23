@@ -14,6 +14,7 @@ nav{
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
   flex-wrap: wrap;
+  position: fixed;
 }
 
 nav .logo{
@@ -65,6 +66,7 @@ input[type="checkbox"]{
     padding: 0 40px 0 50px;
   }
 }
+
 @media (max-width: 920px) {
   nav .menu-btn img{
     display: block;
@@ -250,6 +252,10 @@ input[type="checkbox"]{
       width: auto;
       margin: auto;
   }
+  .repartet h1{
+    /*font-size: 60px;*/
+    line-height: 300px;
+  }
 
   .container{
       width: 50%;
@@ -411,9 +417,9 @@ footer a:hover{
 }
 
 @media (max-width: 560px){
-  footer{
+  /*footer{
       position: relative;
-  }
+  }*/
   footer .content .box{
       width: 100%; 
       margin-top: 30px ;
