@@ -14,6 +14,7 @@ nav{
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
   flex-wrap: wrap;
+  position: fixed;
 }
 
 nav .logo{
@@ -125,8 +126,8 @@ input[type="checkbox"]{
 }
 
 .wrapper h1{
-    max-width: 1350px;
-    font-size: 52px;
+    /*max-width: 1350px;
+    font-size: 52px;*/
     margin-bottom: 60px;
     text-align: center;
 }
@@ -147,7 +148,7 @@ input[type="checkbox"]{
     padding: 20px;
     line-height: 20px;
     color: #8e8b8b;
-    position: relative;
+    /*position: relative;*/
 }
 
 .team .team_member h3{
@@ -167,10 +168,11 @@ input[type="checkbox"]{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    position: absolute;
+    /*position: absolute;*/
+    padding-left: 90px;
     top: -50px;
     left: 50%;
-    transform: translateX(-50%);
+    /*transform: translateX(-50%);*/
     background:#fff;
 }
 .team .team_member .team_img img{
@@ -195,7 +197,7 @@ input[type="checkbox"]{
 
 .historia h1{
     color: #fff;
-    padding-bottom: 50px;
+    padding-top: 90px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
 }
@@ -381,9 +383,9 @@ footer a:hover{
 }
 
 @media (max-width: 560px){
-  footer{
+  /*footer{
       position: relative;
-  }
+  }*/
   footer .content .box{
       width: 100%; 
       margin-top: 30px ;

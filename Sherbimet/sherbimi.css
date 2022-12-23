@@ -14,6 +14,7 @@
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
     flex-wrap: wrap;
+    position: fixed;
   }
   
   nav .logo{
@@ -137,7 +138,7 @@
 
 .wrapper h1{
   font-size: 3em;
-  margin: 25px 0;
+  margin-top: 70px;
   text-align: center;
   font-weight: 600;
   color: rgb(255,0,82);
@@ -433,9 +434,9 @@ footer{
   }
   
   @media (max-width: 560px){
-    footer{
+    /*footer{
         position: relative;
-    }
+    }*/
     footer .content .box{
         width: 100%; 
         margin-top: 30px ;

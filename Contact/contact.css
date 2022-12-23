@@ -14,6 +14,7 @@
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
     flex-wrap: wrap;
+    position: fixed;
   }
   
   nav .logo{
@@ -123,7 +124,7 @@ body{
 }
 
 .contactUs{
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     padding: 40px 100px;
 }
@@ -159,7 +160,7 @@ body{
 }
 
 .contactUs .box{
-    position: relative;
+   /* position: relative;*/
     display: grid;
     grid-template-columns: 2fr 1 fr;
     grid-template-rows:5fr  4fr ;
@@ -176,7 +177,7 @@ body{
 }
 
 .formBox{
-    position: relative;
+    /*position: relative;*/
     width: 100%;
 }
 

@@ -14,6 +14,7 @@ nav{
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
   flex-wrap: wrap;
+  position: fixed;
 }
 
 nav .logo{
@@ -234,7 +235,7 @@ input[type="checkbox"]{
   }
   
   .container{
-    position: relative;
+    /*position: relative;*/
     max-width: 430px;
     width: 100%;
     background: #fff;
@@ -282,7 +283,7 @@ input[type="checkbox"]{
   }
   
   .container .form .title{
-    position: relative;
+    /*position: relative;*/
     font-size: 27px;
     font-weight: 600;
   }
@@ -297,14 +298,14 @@ input[type="checkbox"]{
     border-radius: 25px;
   }
   .form .input-field{
-    position: relative;
+    /*position: relative;*/
     height: 50px;
     width: 100%;
     margin-top: 30px;
   }
   
   .input-field input{
-    position: absolute;
+    /*position: absolute;*/
     height: 100%;
     width: 100%;
     padding: 0 35px;
@@ -636,9 +637,9 @@ footer{
   }
   
   @media (max-width: 560px){
-    footer{
+    /*footer{
         position: relative;
-    }
+    }*/
     footer .content .box{
         width: 100%; 
         margin-top: 30px ;
