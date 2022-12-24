@@ -50,14 +50,14 @@ const container = document.querySelector(".container"),
       emailError.innerHTML =  "<span style='color: red'>Gjatësia e email nuk mund të jetë zero !</span>";
         return false;
     }
-    if(!email.match('@')){
-      emailError.innerHTML =  "<span style='color: red'>Email duhet të përmbaje @ !</span>";
+    if(!email.match('[a-z]+@([a-z]+\.)+(net|com)')){
+      emailError.innerHTML =  "<span style='color: red'>Email nuk është valid !</span>";
         return false;
     }
-    if(!email.endsWith('.net')){
-      emailError.innerHTML = "<span style='color: red'>Email duhet të përfundoj me .net</span>"
-        return false;
-    }
+    // if(!email.endsWith('.net')){
+    //   emailError.innerHTML = "<span style='color: red'>Email duhet të përfundoj me .net</span>"
+    //     return false;
+    // }
     emailError.innerHTML = "<span style='color: green'>Email është në rregull!</span>";
     return true;
 }
@@ -72,8 +72,8 @@ function validatePassword(){
   }
   
 
-  if(!password.match(/[0-9]/)){
-    pass_error.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një numer!</span>";
+  if(!password.match('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])')){
+    pass_error.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një shkronjë të madhe, një të vogël dhe një numër !</span>";
       return false;
   }
 
@@ -115,14 +115,14 @@ function validateEmailR(){
       RemailError.innerHTML =  "<span style='color: red'>Gjatësia e email nuk mund të jetë zero !</span>";
         return false;
     }
-    if(!emailR.match('@')){
-      RemailError.innerHTML =  "<span style='color: red'>Email duhet të përmbaje @ !</span>";
+    if(!emailR.match('[a-z]+@([a-z]+\.)+(net|com)')){
+      RemailError.innerHTML =  "<span style='color: red'>Email nuk është valid !</span>";
         return false;
     }
-    if(!emailR.endsWith('.net')){
-      RemailError.innerHTML = "<span style='color: red'>Email duhet të përfundoj me .net</span>"
-        return false;
-    }
+    // if(!emailR.endsWith('.net')){
+    //   RemailError.innerHTML = "<span style='color: red'>Email duhet të përfundoj me .net</span>"
+    //     return false;
+    // }
     RemailError.innerHTML = "<span style='color: green'>Email është në rregull!</span>";
     return true;
 }
@@ -136,8 +136,8 @@ function validateEmailR(){
         return false;
     }
     
-    if(!passwordR.match(/[0-9]/)){
-      RPass_error.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një numer!</span>";
+    if(!passwordR.match('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])')){
+      RPass_error.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një shkronjë të madhe, një të vogël dhe një numër !</span>";
         return false;
     }
   
@@ -157,8 +157,8 @@ function validateCPasswordR(){
         return false;
     }
     
-    if(!passwordCR.match(/[0-9]/)){
-      CpasswordError.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një numer!</span>";
+    if(!passwordCR.match('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])')){
+      CpasswordError.innerHTML = "<span style='color: red'>Fjalëkalimi duhet të përmbajë një shkronjë të madhe, një të vogël dhe një numër !</span>";
         return false;
     }
   
