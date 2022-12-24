@@ -61,14 +61,14 @@ function validateEmail(){
         submitErorr.innerHTML = 'Email duhet të plotësohet !';
         return false;
     }
-    if(!email.match('@')){
-        submitErorr.innerHTML = 'Email duhet të përmbaje @ ';
+    if(!email.match('[a-z]+@([a-z]+\.)+(net|com)')){
+        submitErorr.innerHTML = 'Email nuk është valid ! ';
         return false;
     }
-    if(!email.endsWith('.net')){
-        submitErorr.innerHTML = 'Email duhet të përfundoj me .net';
-        return false;
-    }
+    // if(!email.endsWith('.net')){
+    //     submitErorr.innerHTML = 'Email duhet të përfundoj me .net';
+    //     return false;
+    // }
     submitErorr.innerHTML = "<span style='color: green'>Email është në rregull!</span>";
     return true;
 }
