@@ -42,12 +42,12 @@ function validatePhone(){
         submitErorr.innerHTML = 'Nr tel duhet të plotësohet';
         return false
     }
-    if(phone.length !== 9){
-        submitErorr.innerHTML = 'Nr tel duhet të jetë 9 numra dhe i formes 044...'
-        return false;
-    }
-    if(!phone.match(/^[0-9]{9}$/)){
-        submitErorr.innerHTML = 'Shtypni vetëm numra';
+    // if(phone.length !== 9){
+    //     submitErorr.innerHTML = 'Nr tel duhet të jetë 9 numra dhe i formes 044...'
+    //     return false;
+    // }
+    if(!phone.match(/^\+383\d{8}$/)){
+        submitErorr.innerHTML = 'Numri duhet të jetë të fillojë me +383 !';
         return false;
     }
     submitErorr.innerHTML = "<span style='color: green'>Nr.Tel është në rregull!</span>";
@@ -61,7 +61,7 @@ function validateEmail(){
         submitErorr.innerHTML = 'Email duhet të plotësohet !';
         return false;
     }
-    if(!email.match('[a-z]+@([a-z]+\.)+(net|com)')){
+    if(!email.match(/^[a-z0-9]+(-[a-z0-9]+)*@[a-z]+(-[a-z]+)*\.(com|net)$/)){
         submitErorr.innerHTML = 'Email nuk është valid ! ';
         return false;
     }

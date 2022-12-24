@@ -50,7 +50,7 @@ const container = document.querySelector(".container"),
       emailError.innerHTML =  "<span style='color: red'>Gjatësia e email nuk mund të jetë zero !</span>";
         return false;
     }
-    if(!email.match('[a-z]+@([a-z]+\.)+(net|com)')){
+    if(!email.match(/^[a-z0-9]+(-[a-z0-9]+)*@[a-z]+(-[a-z]+)*\.(com|net)$/)){
       emailError.innerHTML =  "<span style='color: red'>Email nuk është valid !</span>";
         return false;
     }
@@ -115,7 +115,7 @@ function validateEmailR(){
       RemailError.innerHTML =  "<span style='color: red'>Gjatësia e email nuk mund të jetë zero !</span>";
         return false;
     }
-    if(!emailR.match('[a-z]+@([a-z]+\.)+(net|com)')){
+    if(!emailR.match(/^[a-z0-9]+(-[a-z0-9]+)*@[a-z]+(-[a-z]+)*\.(com|net)$/)){
       RemailError.innerHTML =  "<span style='color: red'>Email nuk është valid !</span>";
         return false;
     }
