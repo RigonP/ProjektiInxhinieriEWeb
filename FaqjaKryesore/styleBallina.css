@@ -498,7 +498,7 @@ input[type="checkbox"]{
     .input-field img.showHidePw{
       cursor: pointer;
       margin-left: 87%;
-      
+      padding-bottom: 7%;
     }
   }
   
