@@ -85,9 +85,35 @@
                <source src="./HospitalTour.mp4" type="video/mp4">
            </video>
        </div>
-
    <!--Ketu perfundon pjesa e wrapper-->
+   <div class="insert_db">
+    <a href="index.php">&#8592;</a>
+    <?php
+    
+        $sname = "localhost";
+        $uname = "root";
+        $password = "";
+        
+        $db_name = "test_db";
+        $conn = mysqli_connect($sname, $uname, $password, $db_name);
+        
+        if(!$conn){
+            echo "Connection failed !";
+            exit();
+        
+        }
+        $sql = "SELECT * FROM images ORDER BY id DESC";
+        $res = mysqli_query($conn,$sql);
 
+        if(mysqli_num_rows($res) > 0){
+            while($images = mysqli_fetch_assoc($res)){ ?>
+                
+                <div class="alb">
+                    <img src="/upload-image/uploads/<?=$images['image_url']?>" width="300px">
+                </div>
+
+    <?php } }?>
+    </div>
        <!--Pjesa e footer-->
        <footer>
         <div class="content">
@@ -134,5 +160,8 @@
             <p>Copyright &#169; 2022 <a href="https://github.com/RigonP/ProjektiInxhinieriEWeb.git">Rigon Pira | Butrint Ostergllava </a> Te gjitha te drejtat te rezervuara</p>
         </div>
     </footer>
+    
+    
+    
 </body>
 </html>

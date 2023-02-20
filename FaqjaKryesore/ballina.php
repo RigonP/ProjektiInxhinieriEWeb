@@ -23,7 +23,7 @@
                  <li><a href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
                  <li><a href="..//Repartet/repartet.html">Reparet</a></li>
                  <li><a href="..//Contact/contact.html">Kontakti</a></li>
-                 <li><a class="login_btn" href="#dergoketu">Login</a></li>
+                 <li><a class="login_btn" href="..//FaqjaKryesore/login_form.php">Login</a></li>
             </ul>
         </nav>
         <!--Ketu perfundon pjesa e header/navigation bar-->
@@ -67,105 +67,6 @@
       </div>
         <!--Ketu perfundon pjesa e pare e ballines-->
 
-
-
-    
-        <!--Ketu fillon pjesa e login/registration form-->
-    <div class="registration-section" id="dergoketu">
-        <div class="registration">
-        <div class="container">
-            <div class="forms">
-                <div class="form login">
-                    <span class="title">Login</span>
-    
-                    <form action="#">
-                        <div class="input-field" >
-                            <input type="text" placeholder="Email" id="email" onkeyup="validateEmail()">
-                            <img class="icon"  src="..//FaqjaKryesore/email.png" alt="email logo" class="email">
-                        </div>  
-                        <span id="email_error"></span>
-                        <div class="input-field">
-                            <input type="password" class="password" placeholder="Fjalekalimi" id="pass" onkeyup="validatePassword()">
-                            <img class="icon"  src="..//FaqjaKryesore/passwordi.png" alt="email logo">
-                            <img class="showHidePw" src="..//FaqjaKryesore/eyePass.png" alt="eye logo">
-                        </div>  
-                        <span id="pass_error"></span>
-                        <div class="checkbox-text">
-                            <div class="checkbox-content">
-                                <input type="checkbox" id="logCheck">
-                                <label for="logCheck" class="text">Me mbaj ne mend</label>
-                            </div>
-    
-                            <a href="#" class="text">Keni harruar fjalekalimin?</a>
-                        </div>
-    
-                        <div class="input-field button">
-                            <input type="button" value="Login" onclick="return validateButtonL()">
-                        </div>  
-                    </form>
-    
-                    <div class="login-signup">
-                        <span class="text">Nuk jeni regjistuar ?
-                            <a href="#" class="text signup-link">Regjistrohu tani</a>
-                        </span>
-                    </div>
-                </div>
-
-
-
-                <!--Ketu fillon pjesa e regjistrimit-->
-                <div class="form signup">
-                    <span class="title">Regjistrimi</span>
-    
-                    <form action="#">
-                        <div class="input-field">
-                            <input type="text" placeholder="Emri" id="nameR" onkeyup="validateNameR()">
-                            <img src="..//FaqjaKryesore/name.png" alt="name logo">
-                        </div>  
-                        <span id="Rname_error"></span>
-                        <div class="input-field">
-                            <input type="text" placeholder="Email" id="emailR" onkeyup="validateEmailR()">
-                            <img class="icon"  src="..//FaqjaKryesore/email.png" alt="email logo">
-                        </div> 
-                        <span id="Remail_error"></span>
-                        <div class="input-field">
-                            <input type="password" class="password" placeholder="Fjalekalimi" id="passwordR" onkeyup="validatePasswordR()">
-                            <img class="icon"  src="..//FaqjaKryesore/passwordi.png" alt="email logo">
-                        </div>  
-                        <span id="RPass_error"></span>
-                        <div class="input-field">
-                            <input type="password" class="password" placeholder="Konfirmo fjalekalimin" id="passwordC" onkeyup="validateCPasswordR()">
-                            <img class="icon"  src="..//FaqjaKryesore/passwordi.png" alt="email logo">
-                            <img class="showHidePw" src="..//FaqjaKryesore/eyePass.png" alt="eye logo">
-                        </div>
-                        <span id="CRPass_error"></span>
-
-                        <div class="checkbox-text">
-                            <div class="checkbox-content">
-                                <input type="checkbox" id="logCheck">
-                                <label for="logCheck" class="text">Me mbaj ne mend</label>
-                            </div>
-    
-                            <a href="#" class="text">Keni harruar fjalekalimin?</a>
-                        </div>
-    
-                        <div class="input-field button">
-                            <input type="button" value="Login Now" onclick="return validateButtonR()">
-                        </div>  
-                    </form>
-    
-                    <div class="login-signup">
-                        <span class="text">Jeni te regjistruar ?
-                            <a href="#" class="text login-link">Login</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        </div>
-    </div>   
-    <script src="script.js"></script>
-    <!--Ketu perfundon pjesa e login/registration form-->
 
 
     <!--Ketu fillon pjesa e punes, sa pacienta, certifikime etj-->

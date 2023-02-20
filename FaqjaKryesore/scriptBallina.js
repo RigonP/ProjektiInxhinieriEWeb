@@ -5,40 +5,6 @@ const container = document.querySelector(".container"),
       login = document.querySelector(".login-link");
 
 
-      //js kodi per me shfaq edhe me fsheh passwordin
-      pwShowHide.forEach(eyeIcon =>{
-        eyeIcon.addEventListener("click", ()=>{
-            pwFields.forEach(pwfield =>{
-                if(pwfield.type === "password"){
-                    pwfield.type = "text";
-                }else{
-                    pwfield.type = "password";
-                }
-            })
-        })
-      })
-
-      //JS me shfaq login edhe singup 
-      signUp.addEventListener("click", ()=> {
-        container.classList.add("active");
-      });
-      login.addEventListener("click", ()=> {
-        container.classList.remove("active");
-      });
-
-
-
-    //JS kodi me shfaq signup dhe login form
-    signUp.addEventListener("click", () => {
-        registration.classList.add("active");
-    });
-
-    login.addEventListener("click", () => {
-        registration.classList.remove("active");
-    });
-
-
-
     // Validimi i fushave
    var emailError = document.getElementById("email_error");
    var passwordError = document.getElementById("pass_error");
@@ -176,7 +142,7 @@ function validateCPasswordR(){
     if(!validateEmail() || !validatePassword()){
       alert("Ju nuk keni plotësuar si duhet fushat e Login Form. Ju lutem rishikoni të dhënat !");
     }else{
-      location.href = ("..//LoginSuccess/login.html");
+      location.href("")
     }
   }
   
@@ -185,7 +151,5 @@ function validateCPasswordR(){
   function validateButtonR(){
     if(!validateNameR() || !validateEmailR() || !validatePasswordR() || !validateCPasswordR()){
       alert("Ju nuk keni plotësuar si duhet fushat e Regjistrimit. Ju lutem rishikoni të dhënat !");
-    }else{
-      location.href = ("..//LoginSuccess/register.html");
     }
   }
