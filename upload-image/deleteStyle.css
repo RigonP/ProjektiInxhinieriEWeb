@@ -1,0 +1,72 @@
+h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 24px;
+  }
+  
+  /* Stizilimi per header te tabeles*/
+  th {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid black;
+  }
+  
+  
+  td {
+    font-size: 18px;
+    padding: 8px;
+    border-bottom: 1px solid black;
+  }
+  
+  /* Stilizimi per delete button */
+  input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 24px;
+    }
+    th {
+      font-size: 16px;
+    }
+    td {
+      font-size: 14px;
+    }
+    input[type="submit"] {
+      padding: 6px 12px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 575px) {
+    h1 {
+      font-size: 20px;
+    }
+    th {
+      font-size: 14px;
+    }
+    td {
+      font-size: 12px;
+    }
+    input[type="submit"] {
+      padding: 4px 8px;
+    }
+  }
+  
+  

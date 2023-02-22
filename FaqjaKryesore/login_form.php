@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
          $_SESSION['admin_name'] = $row['name'];
          header('location:admin_page.php');
 
-      }elseif($row['user_type'] == 'user'){
+      }else if($row['user_type'] == 'user'){
 
          $_SESSION['user_name'] = $row['name'];
          header('location:user_page.php');
@@ -72,10 +72,10 @@ if(isset($_POST['submit'])){
         <!--Ketu perfundon pjesa e header/navigation bar-->
 <div class="form-container">
 <div class="container"> 
-   <form action="" method="post">
+   <form action="" method="post" novalidate>
       <h3>Login</h3>
       
-      <input type="email" name="email" required placeholder="Email" id="email" onkeyup="validateEmail()">
+      <input type="text" name="email" required placeholder="Email" id="email" onkeyup="validateEmail()">
       <span id="email_error"></span>
       <input type="password" name="password" required placeholder="Password" class="password" id="pass" onkeyup="validatePassword()"> 
       <span id="pass_error"></span>
