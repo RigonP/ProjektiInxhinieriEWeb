@@ -18,7 +18,6 @@ if(!isset($_SESSION['user_name'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>User page</title>
 
-   <!-- custom css file link  -->
    <link rel="stylesheet" href="style.css">
 
 </head>

@@ -91,7 +91,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
             echo "
             <div class='alert alert-warning alert-dismissble fade show' role='alert'>
                 <strong>$errorMessage</strong>
-                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
             </div>
             ";
         }
@@ -127,7 +126,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
                     <div class='offset-sm-3 col-sm-6'>
                         <div class='alert alert-success alert-dismissble fade show' role='alert'>
                             <strong>$successMessage</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>
                     </div>
                 </div>";

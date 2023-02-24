@@ -1,6 +1,6 @@
 
 <?php
-// Connect to the database
+// Lidhja me databaze
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    // Get the data from the form
+    //Merri te dhenat nga forma e databazes
     $image = $_POST["image"];
     $pershkrimi = $_POST["pershkrimi"];
     $name = $_POST["name"];
@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $errorMessage = "Te gjitha fushat duhet te plotesohen !";
             break;
         }
-        // Insert the new testimonial into the database
+        // Shto nje repart te ri ne databaze
         $sql = "INSERT INTO reparti (image, pershkrimi, name) VALUES ('$image', '$pershkrimi', '$name')";
         $result = $conn->query($sql);
 
