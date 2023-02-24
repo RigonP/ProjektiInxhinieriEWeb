@@ -11,19 +11,19 @@
         <!--Ketu fillon pjesa e header/navigation bar -->
         <nav>
             <div class="logo">
-               <a href="..//FaqjaKryesore/ballina.html"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
+               <a href="..//FaqjaKryesore/ballina.php"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
             </div>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
                 <img src="..//FaqjaKryesore/menu.png" alt="" id="fotoNav">
             </label>
             <ul>
-                 <li><a href="..//FaqjaKryesore/ballina.html">Faqja Kryesore</a></li>
-                 <li><a href="..//AboutUs/about.html">Rreth nesh</a></li>
-                 <li><a class="active" href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
-                 <li><a href="..//Repartet/repartet.html">Reparet</a></li>
-                 <li><a href="..//Contact/contact.html">Kontakti</a></li>
-                 <li><a class="login_btn" href="..//FaqjaKryesore/ballina.html#dergoketu">Login</a></li>
+                 <li><a href="..//FaqjaKryesore/ballina.php">Faqja Kryesore</a></li>
+                 <li><a href="..//AboutUs/about.php">Rreth nesh</a></li>
+                 <li><a class="active" href="..//Sherbimet/sherbimi.php">Sherbimet</a></li>
+                 <li><a href="..//Repartet/repartet.php">Reparet</a></li>
+                 <li><a href="..//Contact/contact.php">Kontakti</a></li>
+                 <li><a class="login_btn" href="..//FaqjaKryesore/login_form.php">Login</a></li>
             </ul>
         </nav>
         <!--Ketu perfundon pjesa e header/navigation bar-->
@@ -86,6 +86,7 @@
            </video>
        </div>
    <!--Ketu perfundon pjesa e wrapper-->
+
    <div class="insert_db">
     <a href="index.php">&#8592;</a>
     <?php
@@ -109,11 +110,12 @@
             while($images = mysqli_fetch_assoc($res)){ ?>
                 
                 <div class="alb">
-                    <img src="/upload-image/uploads/<?=$images['image_url']?>" width="300px">
+                    <img src="/Ligjerata/ProjektiInxhinieriEWeb/upload-image/uploads/<?=$images['image_url']?>" width="300px">
                 </div>
 
     <?php } }?>
     </div>
+    
        <!--Pjesa e footer-->
        <footer>
         <div class="content">
@@ -135,11 +137,11 @@
             </div>
             <div class="middle box">
                 <div class="topic">Repartet</div>
-                <div><a href="..//Repartet/repartet.html">Radiologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Kardiologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Infektiva</a></div>
-                <div><a href="..//Repartet/repartet.html">Endokrinologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Laboratori</a></div>
+                <div><a href="..//Repartet/repartet.php">Radiologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Kardiologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Infektiva</a></div>
+                <div><a href="..//Repartet/repartet.php">Endokrinologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Laboratori</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe</div>

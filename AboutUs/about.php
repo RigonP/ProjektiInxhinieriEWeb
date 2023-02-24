@@ -19,11 +19,11 @@
             </label>
             <ul>
                  <li><a href="..//FaqjaKryesore/ballina.php">Faqja Kryesore</a></li>
-                 <li><a class="active" href="..//AboutUs/about.html">Rreth nesh</a></li>
-                 <li><a href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
-                 <li><a href="..//Repartet/repartet.html">Reparet</a></li>
-                 <li><a href="..//Contact/contact.html">Kontakti</a></li>
-                 <li><a class="login_btn" href="..//FaqjaKryesore/ballina.php#dergoketu">Login</a></li>
+                 <li><a class="active" href="..//AboutUs/about.php">Rreth nesh</a></li>
+                 <li><a href="..//Sherbimet/sherbimi.php">Sherbimet</a></li>
+                 <li><a href="..//Repartet/repartet.php">Reparet</a></li>
+                 <li><a href="..//Contact/contact.php">Kontakti</a></li>
+                 <li><a class="login_btn" href="..//FaqjaKryesore/login_form.php">Login</a></li>
             </ul>
         </nav>
         <!--Ketu perfundon pjesa e header/navigation bar-->
@@ -45,42 +45,36 @@
         <div class="wrapper">
             <h1>Stafi menaxhues</h1>
             <div class="team">
-                <div class="team_member">
-                    <div class="team_img">
-                        <img src="..//AboutUs/img/man.png" alt="Person_1_image">
-                    </div>
-                    <h3>Rigon Pira</h3>
-                    <p class="role">Aksionar</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        A sed sunt placeat quae libero, velit iste. 
-                        Quos ut temporibus architecto eum rerum dolores voluptates, 
-                        nam fugiat dicta laudantium. Praesentium, magni!</p>
-                </div>
+                
+                
+    <?php
+    // lidhja me databazen
+    $db_connection = mysqli_connect("localhost", "root", "", "user_db");
 
-                <div class="team_member">
-                    <div class="team_img">
-                        <img src="..//AboutUs/img/man.png" alt="Person_2_image">
-                    </div>
-                    <h3>Butrint Ostergllava</h3>
-                    <p class="role">Aksionar</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        A sed sunt placeat quae libero, velit iste. 
-                        Quos ut temporibus architecto eum rerum dolores voluptates, 
-                        nam fugiat dicta laudantium. Praesentium, magni!</p>
-                </div>
-                <div class="team_member">
-                    <div class="team_img">
-                        <img src="..//AboutUs/img/woman.png" alt="Person_3_image">
-                    </div>
-                    <h3>Filane Fisteku</h3>
-                    <p class="role">Menaxhere</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        A sed sunt placeat quae libero, velit iste. 
-                        Quos ut temporibus architecto eum rerum dolores voluptates, 
-                        nam fugiat dicta laudantium. Praesentium, magni!</p>
-                </div>
-            </div>
+    // kontrollo nese ka ndonje gabim gjate lidhjes me databazen
+    if (mysqli_connect_errno()) {
+        echo "Deshtoi lidhja me databaze: " . mysqli_connect_error();
+        exit();
+    }
+
+    // marrja e stafit menaxhues nga databaza
+    $staff_query = "SELECT * FROM staff";
+    $staff_result = mysqli_query($db_connection, $staff_query);
+
+    // shfaqja e stafit menaxhues
+    while ($staff_row = mysqli_fetch_assoc($staff_result)) {
+        echo '<div class="team_member">';
+        echo '<h3>' . $staff_row['name'] . '</h3>';
+        echo '<p class="role">' . $staff_row['role'] . '</p>';
+        echo '<p class="description">' . $staff_row['description'] . '</p>';
+        echo '</div>';
+    }
+
+        // mbyllja e lidhjes me databazen
+        mysqli_close($db_connection);
+        ?>
         </div>
+    </div>
 
     <!--Pjesa e dyte, me icons-->
     <div class="icons-container">
@@ -144,11 +138,11 @@
             </div>
             <div class="middle box">
                 <div class="topic">Repartet</div>
-                <div><a href="..//Repartet/repartet.html">Radiologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Kardiologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Infektiva</a></div>
-                <div><a href="..//Repartet/repartet.html">Endokrinologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Laboratori</a></div>
+                <div><a href="..//Repartet/repartet.php">Radiologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Kardiologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Infektiva</a></div>
+                <div><a href="..//Repartet/repartet.php">Endokrinologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Laboratori</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe</div>

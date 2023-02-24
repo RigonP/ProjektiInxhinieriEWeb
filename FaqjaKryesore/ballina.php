@@ -19,10 +19,10 @@
             </label>
             <ul>
                  <li><a class="active" href="#">Faqja Kryesore</a></li>
-                 <li><a href="..//AboutUs/about.html">Rreth nesh</a></li>
-                 <li><a href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
-                 <li><a href="..//Repartet/repartet.html">Reparet</a></li>
-                 <li><a href="..//Contact/contact.html">Kontakti</a></li>
+                 <li><a href="..//AboutUs/about.php">Rreth nesh</a></li>
+                 <li><a href="..//Sherbimet/sherbimi.php">Sherbimet</a></li>
+                 <li><a href="..//Repartet/repartet.php">Reparet</a></li>
+                 <li><a href="..//Contact/contact.php">Kontakti</a></li>
                  <li><a class="login_btn" href="..//FaqjaKryesore/login_form.php">Login</a></li>
             </ul>
         </nav>
@@ -35,8 +35,8 @@
         <h2>Ne kujdesimi për shëndetin tuaj !</h2>
 
         <div class="btn">
-            <a class="blue" href="..//Contact/contact.html">Cakto termin</a>
-            <a class="red" href="..//Sherbimet/sherbimi.html">Vizito shërbimet</a>
+            <a class="blue" href="..//Contact/contact.php">Cakto termin</a>
+            <a class="red" href="..//Sherbimet/sherbimi.php">Vizito shërbimet</a>
         </div>
       </div>
 
@@ -139,11 +139,11 @@
                 </div>
                 <div class="middle box">
                     <div class="topic">Repartet</div>
-                    <div><a href="..//Repartet/repartet.html">Radiologjia</a></div>
-                    <div><a href="..//Repartet/repartet.html">Kardiologjia</a></div>
-                    <div><a href="..//Repartet/repartet.html">Infektiva</a></div>
-                    <div><a href="..//Repartet/repartet.html">Endokrinologjia</a></div>
-                    <div><a href="..//Repartet/repartet.html">Laboratori</a></div>
+                    <div><a href="..//Repartet/repartet.php">Radiologjia</a></div>
+                    <div><a href="..//Repartet/repartet.php">Kardiologjia</a></div>
+                    <div><a href="..//Repartet/repartet.php">Infektiva</a></div>
+                    <div><a href="..//Repartet/repartet.php">Endokrinologjia</a></div>
+                    <div><a href="..//Repartet/repartet.php">Laboratori</a></div>
                 </div>
                 <div class="right box">
                     <div class="topic">Subscribe</div>

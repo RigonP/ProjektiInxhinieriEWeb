@@ -1,12 +1,4 @@
-<?php
-@include 'config.php';
 
-session_start();
-
-if(!isset($_SESSION['admin_name'])){
-   header('location:/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/admin_page.php');
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,22 +6,31 @@ if(!isset($_SESSION['admin_name'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styleIndex.css">
-    
+    <link rel="stylesheet" href="/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/styleIndex.css">
+    <style>
+        .linku{
+            background-color: blue; 
+            color: white; 
+            margin-left: 10%;
+            border-radius: 10px; 
+            padding: 5px  20px; 
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container my-5">
-        <h2>Lista e perdoruesve</h2>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/create.php" role="button">Shto user !</a>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/logout.php" role="button">LOGOUT</a>
-        <a class="btn btn-danger" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/admin_page.php" role="button">Kthehu prapa</a>
+        <h2>Stafi menaxhues</h2>
+        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/create.php" role="button">Shto staf !</a>
+        
+        
         <br>
         <table class="table">
             <thead>
                 <th>ID</th>
                 <th>Emri</th>
-                <th>Email</th>
                 <th>Roli</th>
+		        <th>Pershkrimi</th>
                 <th>Veprimi</th>
             </thead>
             <tbody>
@@ -49,7 +50,7 @@ if(!isset($_SESSION['admin_name'])){
                 }
 
                 //lexo te gjitha rreshtat nga databaza
-                $sql = "SELECT * FROM user_form";
+                $sql = "SELECT * FROM staff";
                 $result = $connection->query($sql);
 
                 if(!$result){
@@ -67,13 +68,13 @@ if(!isset($_SESSION['admin_name'])){
                     <tr>
                     <td>$index</td>
                     <td>$row[name]</td>
-                    <td>$row[email]</td>
-                    <td>$row[user_type]</td>
+                    <td>$row[role]</td>
+                    <td>$row[description]</td>
                     <td>
                         <!--<a href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/edit.php?id=$row[id]'>Edit</a>-->
                         <!--<a href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/delete.php?id=$row[id]'>Delete</a>-->
-                        <a class='btn btn-primary btn-sm' href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/edit.php?id=$row[id]'>Edit</a>
-                        <a class='btn btn-danger btn-sm' href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/delete.php?id=$row[id]'>Delete</a>
+                        <a class='btn btn-primary btn-sm' href='/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/edit.php?id=$row[id]'>Edit</a>
+                        <a class='btn btn-danger btn-sm' href='/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/delete.php?id=$row[id]'>Delete</a>
                     </td>
                 </tr>
                     ";
@@ -82,11 +83,8 @@ if(!isset($_SESSION['admin_name'])){
                 
             </tbody>
         </table>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/count/index.php" role="button">Numri i perdoruesve</a>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/upload-image/index.php" role="button">Shto foto tek sherbimet !</a>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/view2.php" role="button">Menaxho stafin !</a>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/Repartet/repartiDash.php" role="button">Menaxho repartet !</a>
+       
     </div>
-    
+    <a href="/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/index.php" class="linku">Kthehu prapa</a>
 </body>
 </html>

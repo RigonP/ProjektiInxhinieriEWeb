@@ -37,7 +37,7 @@
     </style>
 </head>
 <body>
-<a href="/myshop/index.php" class="linku">Kthehu prapa</a>
+<a href="/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/index.php" class="linku">Kthehu prapa</a>
 
     <h2 class="teksti">Numri i perdoruesve qe jane te kyqur !</h2>
     <div class="counter-container">

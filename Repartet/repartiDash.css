@@ -1,0 +1,109 @@
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  .table td img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btn-primary {
+    background-color: blue;
+  }
+  
+  .btn-danger {
+    background-color: red;
+  }
+
+  .linku {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 10%;
+  }
+
+  .linku:hover {
+    background-color: darkblue;
+  }
+
+  /* Pjesa responzive */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .btn {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .btn {
+      font-size: 14px;
+    }
+  
+    .table th,
+    .table td {
+      padding: 5px;
+      font-size: 12px;
+    }
+    .linku {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+  }
+  
+
+  
+  

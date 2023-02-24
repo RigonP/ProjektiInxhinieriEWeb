@@ -19,12 +19,12 @@
                 <img src="..//FaqjaKryesore/menu.png" alt="" id="fotoNav">
             </label>
             <ul>
-                 <li><a href="..//FaqjaKryesore/ballina.html">Faqja Kryesore</a></li>
-                 <li><a href="..//AboutUs/about.html">Rreth nesh</a></li>
-                 <li><a href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
-                 <li><a class="active" href="..//Repartet/repartet.html">Reparet</a></li>
-                 <li><a href="..//Contact/contact.html">Kontakti</a></li>
-                 <li><a class="login_btn" href="..//FaqjaKryesore/ballina.html#dergoketu">Login</a></li>
+                 <li><a href="..//FaqjaKryesore/ballina.php">Faqja Kryesore</a></li>
+                 <li><a href="..//AboutUs/about.php">Rreth nesh</a></li>
+                 <li><a href="..//Sherbimet/sherbimi.php">Sherbimet</a></li>
+                 <li><a class="active" href="..//Repartet/repartet.php">Reparet</a></li>
+                 <li><a href="..//Contact/contact.php">Kontakti</a></li>
+                 <li><a class="login_btn" href="..//FaqjaKryesore/login_form.php">Login</a></li>
             </ul>
         </nav>
         <!--Ketu perfundon pjesa e header/navigation bar-->
@@ -32,64 +32,50 @@
         <div class="repartet">
             <h1>Repartet</h1>
          </div>
+        
+        <?php
+        // Lidhja me databaza
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "user_db";
 
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        
+        //Query databaze per repartet
+        $sql = "SELECT * FROM reparti";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                //Shfaqja e secilit repart sipas formatit te specifikuar
+                echo '<div class="containerT">
+                        <div class="testimonial">
+                            <div class="testi-content">
+                                <div class="slide">
+                                    <img src="' . $row["image"] . '" alt="" class="image">
+                                    <p>' . $row["pershkrimi"] . '</p>
+                                    <div class="details">
+                                        <span class="name">' . $row["name"] . '</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
+            }
+        } else {
+            echo "Asnje repart nuk u gjend !";
+        }
+
+        // Mbyllja e lidhjes me databaze
+        $conn->close();
+        ?>
        
-         <!--Krijimi i disa reparteve ne div te vecante/Kardiologjia-->
-         <div class="containerT">
-            <div class="testimonial">
-                <div class="testi-content">
-                    <div class="slide">
-                        <img src="..//Repartet/kardio.jpg" alt="" class="image">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sint, sunt. Doloremque repellat deserunt eveniet? 
-                            Consequuntur unde repellat autem dolor voluptatem fugiat, 
-                            saepe aut dolorum minus et harum vel accusamus architecto!</p>
-                    
-                            <div class="details">
-                                <span class="name">Kardiologjia</span>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>  
-
-        <!--Reparti i radiologjise-->
-        <div class="container2">
-            <div class="testimonial">
-                <div class="testi-content">
-                    <div class="slide">
-                        <img src="..//Repartet/radio.jpg" alt="" class="image">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sint, sunt. Doloremque repellat deserunt eveniet? 
-                            Consequuntur unde repellat autem dolor voluptatem fugiat, 
-                            saepe aut dolorum minus et harum vel accusamus architecto!</p>
-                    
-                            <div class="details">
-                                <span class="name">Radiologjia</span>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Reparti i Infektives-->
-        <div class="container3">
-            <div class="testimonial">
-                <div class="testi-content">
-                    <div class="slide">
-                        <img src="..//Repartet/infection.jpg" alt="" class="image">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sint, sunt. Doloremque repellat deserunt eveniet? 
-                            Consequuntur unde repellat autem dolor voluptatem fugiat, 
-                            saepe aut dolorum minus et harum vel accusamus architecto!</p>
-                    
-                            <div class="details">
-                                <span class="name">Infektiva</span>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
+         
 
         <!--Pjesa e Slider me 4 foto-->
         <div class="slideshow">

@@ -61,11 +61,11 @@ if(isset($_POST['submit'])){
                 <img src="..//FaqjaKryesore/menu.png" alt="" id="fotoNav">
             </label>
             <ul>
-                 <li><a href=".//FaqjaKryesore/ballina.html">Faqja Kryesore</a></li>
-                 <li><a href="..//AboutUs/about.html">Rreth nesh</a></li>
-                 <li><a href="..//Sherbimet/sherbimi.html">Sherbimet</a></li>
-                 <li><a href="..//Repartet/repartet.html">Reparet</a></li>
-                 <li><a href="..//Contact/contact.html">Kontakti</a></li>
+                 <li><a href="..//FaqjaKryesore/ballina.php">Faqja Kryesore</a></li>
+                 <li><a href="..//AboutUs/about.php">Rreth nesh</a></li>
+                 <li><a href="..//Sherbimet/sherbimi.php">Sherbimet</a></li>
+                 <li><a href="..//Repartet/repartet.php">Reparet</a></li>
+                 <li><a href="..//Contact/contact.php">Kontakti</a></li>
                  <li><a class="active" class="login_btn" href="..//FaqjaKryesore/login_form.php">Login</a></li>
             </ul>
         </nav>

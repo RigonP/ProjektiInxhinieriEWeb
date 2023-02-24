@@ -6,7 +6,7 @@ $password = "";
 $database = "user_db";
 
 
-//Create connection
+//Lidhja me databaze
 $connection = new mysqli($severname, $username, $password, $database);
 
 
