@@ -29,7 +29,7 @@ if(!isset($_SESSION['user_name'])){
       <h3>Pershendetje !</h3>
       <h1>Miresevini <span><?php echo $_SESSION['user_name'] ?></span></h1>
       <p>Kjo eshte faqja per user</p>
-      <a href="ballina.html" class="btn">Vazhdo shiko faqen</a>
+      <a href="ballina.php" class="btn">Vazhdo shiko faqen</a>
       <a href="logout.php" class="btn">logout</a>
    </div>
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -5,7 +6,6 @@
       <meta charset="utf-8">
       <title>Kontakti</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link rel="stylesheet" href="contact.css">
     </head>
 
@@ -40,47 +40,46 @@
                <!--Kontakt Forma-->
                <div class="contact form">
                    <h3>Shkruani mesazh </h3>
-                   <form>
+                   <form method="post" action="contactManage.php">
                        <div class="formBox">
                            <div class="row50">
                                <div class="inputBox">
                                    <span>Emri</span>
-                                   <input type="text" placeholder="Emri" id="contact-name" onkeyup="validateName()">
+                                   <input type="text" placeholder="Emri" id="contact-name"  name="contact-name" onkeyup="validateName()">
                                </div>
                                <div class="inputBox">
                                    <span>Mbiemri</span>
-                                   <input type="text" placeholder="Mbiemri"  id="contact-surname" onkeyup="validateSurname()">
+                                   <input type="text" placeholder="Mbiemri"  id="contact-surname" name="contact-surname" onkeyup="validateSurname()">
                                </div>
                            </div>
    
                            <div class="row50">
                                <div class="inputBox">
                                    <span>Email Adresa</span>
-                                   <input type="text" placeholder="Email" id="contact-email" onkeyup="validateEmail()"> 
+                                   <input type="text" placeholder="Email" id="contact-email" name="contact-email" onkeyup="validateEmail()"> 
                                </div>
                                <div class="inputBox">
                                    <span>Numri telefonit</span>
-                                   <input type="text" placeholder="Mobile" id="contact-phone" onkeyup="validatePhone()">
+                                   <input type="text" placeholder="Mobile" id="contact-phone" name="contact-phone" onkeyup="validatePhone()">
                                </div>
                            </div>
                            
                            <div class="row100">
                                <div class="inputBox">
                                    <span>Mesazhi</span>
-                                   <textarea placeholder="Shkruani mesazhin tuaj" id="contact-message" onkeyup="validateMessage()"></textarea>
+                                   <textarea placeholder="Shkruani mesazhin tuaj" id="contact-message" name="contact-message" onkeyup="validateMessage()"></textarea>
                                </div>
                            </div>
    
    
                            <div class="row100">
                                <div class="inputBox">
-                                   <input type="button" value="Dergo" onclick="return validateForm()">
+                                    <!-- Kemi ndryshuar butonin nga button ne submit per ti derguar te dhenat ne server-->
+                                   <input type="submit" value="Dergo" onclick="return validateForm()">
                                    <span id="submit-error"></span>
                                    <span id="submit-error2"></span>
                                </div>
                            </div>
-   
-   
                        </div>
                    </form>
                </div>

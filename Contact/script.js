@@ -94,7 +94,7 @@ function validateForm(){
         alert("Ju nuk keni plotësuar si duhet fushat e kontaktit. Ju lutem rishikoni të dhënat !");
         return false;
     }else{
-        location.href = ("..//LoginSuccess/contactValidation.html");
+        //location.href = ("..//LoginSuccess/contactValidation.html");
         return true;
     }
 

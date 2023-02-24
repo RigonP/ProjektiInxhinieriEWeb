@@ -22,6 +22,7 @@ if(!isset($_SESSION['admin_name'])){
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/create.php" role="button">Shto user !</a>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/logout.php" role="button">LOGOUT</a>
         <a class="btn btn-danger" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/admin_page.php" role="button">Kthehu prapa</a>
+        <a class="btn btn-danger" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/ballina.php" role="button">Kthehu te faqja !</a>
         <br>
         <table class="table">
             <thead>
@@ -69,8 +70,6 @@ if(!isset($_SESSION['admin_name'])){
                     <td>$row[email]</td>
                     <td>$row[user_type]</td>
                     <td>
-                        <!--<a href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/edit.php?id=$row[id]'>Edit</a>-->
-                        <!--<a href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/delete.php?id=$row[id]'>Delete</a>-->
                         <a class='btn btn-primary btn-sm' href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/edit.php?id=$row[id]'>Edit</a>
                         <a class='btn btn-danger btn-sm' href='/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/delete.php?id=$row[id]'>Delete</a>
                     </td>
@@ -85,6 +84,7 @@ if(!isset($_SESSION['admin_name'])){
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/upload-image/index.php" role="button">Menaxho fotot !</a>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/view2.php" role="button">Menaxho stafin !</a>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/Repartet/repartiDash.php" role="button">Menaxho repartet !</a>
+        <a style="background-color: blue; color: white; padding: 12px 24px;text-align: center; text-decoration: none;display: inline-block; font-size: 16px;border-radius: 2rem;" href="/Ligjerata/ProjektiInxhinieriEWeb/Contact/adminpage.php" role="button">Menaxho kontaktin !</a>
     </div>
     
 </body>

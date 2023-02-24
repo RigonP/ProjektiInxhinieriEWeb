@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
    <!--Ketu fillon pjesa e header/navigation bar -->
    <nav>
             <div class="logo">
-               <a href="..//FaqjaKryesore/ballina.html"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
+               <a href="..//FaqjaKryesore/ballina.php"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
             </div>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
