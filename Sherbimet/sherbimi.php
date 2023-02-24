@@ -88,7 +88,6 @@
    <!--Ketu perfundon pjesa e wrapper-->
 
    <div class="insert_db">
-    <a href="index.php">&#8592;</a>
     <?php
     
         $sname = "localhost";

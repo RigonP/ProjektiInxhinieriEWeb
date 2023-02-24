@@ -15,7 +15,6 @@ if(!isset($_SESSION['admin_name'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styleIndex.css">
-    
 </head>
 <body>
     <div class="container my-5">
@@ -83,7 +82,7 @@ if(!isset($_SESSION['admin_name'])){
             </tbody>
         </table>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/count/index.php" role="button">Numri i perdoruesve</a>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/upload-image/index.php" role="button">Shto foto tek sherbimet !</a>
+        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/upload-image/index.php" role="button">Menaxho fotot !</a>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/view2.php" role="button">Menaxho stafin !</a>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/Repartet/repartiDash.php" role="button">Menaxho repartet !</a>
     </div>
