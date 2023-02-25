@@ -20,9 +20,9 @@ if(!isset($_SESSION['admin_name'])){
     <div class="container my-5">
         <h2>Lista e perdoruesve</h2>
         <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/Dashboard/create.php" role="button">Shto user !</a>
-        <a class="btn btn-primary" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/logout.php" role="button">LOGOUT</a>
+        <a class="btn btn-danger" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/logout.php" role="button">LOGOUT</a>
         <a class="btn btn-danger" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/admin_page.php" role="button">Kthehu prapa</a>
-        <a class="btn btn-danger" href="/Ligjerata/ProjektiInxhinieriEWeb/FaqjaKryesore/ballina.php" role="button">Kthehu te faqja !</a>
+        
         <br>
         <table class="table">
             <thead>
