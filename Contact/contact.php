@@ -52,7 +52,7 @@
                                    <input type="text" placeholder="Mbiemri"  id="contact-surname" name="contact-surname" onkeyup="validateSurname()">
                                </div>
                            </div>
-   
+                            
                            <div class="row50">
                                <div class="inputBox">
                                    <span>Email Adresa</span>

@@ -12,7 +12,7 @@
         <!--Ketu fillon pjesa e header/navigation bar -->
         <nav>
             <div class="logo">
-               <a href="..//FaqjaKryesore/ballina.html"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
+               <a href="..//FaqjaKryesore/ballina.php"><img style="width: 250px;" src="..//FaqjaKryesore/LogoProDoc-removebg-preview.png" alt="LogoProDoc"></a>
             </div>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
@@ -134,11 +134,11 @@
             </div>
             <div class="middle box">
                 <div class="topic">Repartet</div>
-                <div><a href="..//Repartet/repartet.html">Radiologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Kardiologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Infektiva</a></div>
-                <div><a href="..//Repartet/repartet.html">Endokrinologjia</a></div>
-                <div><a href="..//Repartet/repartet.html">Laboratori</a></div>
+                <div><a href="..//Repartet/repartet.php">Radiologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Kardiologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Infektiva</a></div>
+                <div><a href="..//Repartet/repartet.php">Endokrinologjia</a></div>
+                <div><a href="..//Repartet/repartet.php">Laboratori</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe</div>

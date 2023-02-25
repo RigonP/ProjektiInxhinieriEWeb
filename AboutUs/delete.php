@@ -9,7 +9,7 @@ if(isset($_GET["id"])){
 
 
 
-    //Create connection
+    //Lidhja me databaze
     $connection = new mysqli($severname, $username, $password, $database);
 
     $sql = "DELETE FROM staff WHERE id=$id";
