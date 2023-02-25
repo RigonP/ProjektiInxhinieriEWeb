@@ -52,7 +52,7 @@
     $db_connection = mysqli_connect("localhost", "root", "", "user_db");
 
     // kontrollo nese ka ndonje gabim gjate lidhjes me databazen
-    if (mysqli_connect_errno()) {
+    if (!$db_connection) {
         echo "Deshtoi lidhja me databaze: " . mysqli_connect_error();
         exit();
     }
