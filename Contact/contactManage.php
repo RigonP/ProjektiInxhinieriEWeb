@@ -21,10 +21,10 @@ $mesazhi = $_POST['contact-message'];
 // Shto te dhenat ne databaze
 $sql = "INSERT INTO contact (emri, mbiemri, email, telefoni, mesazhi) VALUES ('$emri', '$mbiemri', '$email', '$telefoni', '$mesazhi')";
 
-if (!mysqli_query($conn, $sql)) {
-  echo "Të dhënat u ruajtën me sukses";
+if (mysqli_query($conn, $sql)) {
+  echo "<h1>Të dhënat u ruajtën me sukses</h1>";
 } else {
-  echo "Gabim gjatë ruajtjes së të dhënave: " . mysqli_error($conn);
+  echo "<h1>Gabim gjatë ruajtjes së të dhënave: </h1>" . mysqli_error($conn);
 }
 
 // Mbyllja e lidhjes me databaze
