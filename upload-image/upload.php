@@ -35,7 +35,7 @@ if(isset($_POST['submit']) && isset($_FILES['my_image'])){
                 header("location: upload.php");
                 
             }else{
-                $em = "You can't upload files of this type!";
+                $em = "You can't upload files of this type!  /  Nuk mund te ngarkoni fajlla te llojit te tille";
                 header("location: index.php?error=$em");
             }
         }
