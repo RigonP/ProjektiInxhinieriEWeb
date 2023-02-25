@@ -7,7 +7,7 @@ $database = "user_db";
 
 
 //Lidhje me databaze
-$connection = new mysqli($severname, $username, $password, $database);
+$connection = mysqli_connect($severname, $username, $password, $database);
 
 
 

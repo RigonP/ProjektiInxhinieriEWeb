@@ -1,5 +1,3 @@
-/* General styles */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -47,7 +45,6 @@ body {
     background-color: #3e8e41;
   }
   
-  /* Media queries */
   
   @media (max-width: 768px) {
     form {

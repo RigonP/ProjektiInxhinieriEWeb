@@ -83,7 +83,7 @@ if(isset($_POST['submit'])){
 
       <select name="user_type">
          <option value="user">User</option>
-         <option value="admin">Admin</option>
+         <!--<option value="admin">Admin</option>-->
       </select>
       
       <input type="submit" name="submit" value="register now" class="form-btn">

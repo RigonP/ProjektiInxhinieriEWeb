@@ -10,7 +10,7 @@ if(isset($_GET["id"])){
 
 
     //Lidhja me databaze
-    $connection = new mysqli($severname, $username, $password, $database);
+    $connection = mysqli_connect($severname, $username, $password, $database);
 
     $sql = "DELETE FROM staff WHERE id=$id";
     $connection->query($sql);

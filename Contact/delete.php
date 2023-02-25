@@ -8,7 +8,7 @@ if(!isset($_GET["ID"])){
     $database = "user_db";
 
     //Lidhja me databaze
-    $connection = new mysqli($servername, $username, $password, $database);
+    $connection = mysqli_connect($servername, $username, $password, $database);
 
     $sql = "DELETE FROM contact WHERE id = $id";
     $connection->query($sql);

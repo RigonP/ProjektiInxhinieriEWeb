@@ -6,9 +6,9 @@ $username = "root";
 $password = "";
 $dbname = "user_db";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$conn =  mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+    die("Lidhja me databaze deshtoi !");
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){

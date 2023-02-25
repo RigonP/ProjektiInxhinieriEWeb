@@ -6,7 +6,7 @@ $database = "user_db";
 
 
 //Create connection
-$connection = new mysqli($severname, $username, $password, $database);
+$connection = mysqli_connect($severname, $username, $password, $database);
 
 $id = "";
 $emri = "";
@@ -18,7 +18,7 @@ $errorMessage = "";
 $successMessage = "";
 
 if($_SERVER['REQUEST_METHOD'] == 'GET'){
-    //GET method: SHow the data of the client
+    //Get metoda i shfaq te dhenat e perdoruesve
     if(!isset($_GET['id'])){
         header("location:/Ligjerata/ProjektiInxhinieriEWeb/AboutUs/view2.php");
         exit;
@@ -59,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
         $result = $connection->query($sql);
     
         if (!$result) {
-            $errorMessage = "Invalid query: " . $connection->error;
+            $errorMessage = "Query jo valid: " . $connection->error;
             break;
         }
     
@@ -107,13 +107,13 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Role</label>
+                <label class="col-sm-3 col-form-label">Roli</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="role" value="<?php echo $role ?>">
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Description</label>
+                <label class="col-sm-3 col-form-label">Pershkrimi</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="description" value="<?php echo $description ?>">
                 </div>

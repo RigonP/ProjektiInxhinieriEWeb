@@ -42,7 +42,7 @@
 
                 
                 //Lidhja me databaze
-                $connection = new mysqli($severname, $username, $password, $database);
+                $connection = mysqli_connect($severname, $username, $password, $database);
 
                 //Shiko lidhjen me databaze
                 if($connection->connect_error){

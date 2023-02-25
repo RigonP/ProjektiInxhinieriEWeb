@@ -125,7 +125,7 @@ body {
     display: grid;
   }
   
-  /* Responsive styles */
+  /* Pjesa responzive*/
   @media (max-width: 767px) {
     .col-sm-3 {
       flex: 0 0 100%;

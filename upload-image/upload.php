@@ -14,7 +14,7 @@ if(isset($_POST['submit']) && isset($_FILES['my_image'])){
 
     if($error === 0){
         if($img_size > 500000){
-            $em = "Sorry, your file is to large!";
+            $em = "Fajlli juaj eshte shume i madh per tu ngarkuar !";
             header("location: index.php?error=$em");
         }else{
             $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
@@ -35,7 +35,7 @@ if(isset($_POST['submit']) && isset($_FILES['my_image'])){
                 header("location: upload.php");
                 
             }else{
-                $em = "You can't upload files of this type!  /  Nuk mund te ngarkoni fajlla te llojit te tille";
+                $em = "You can't upload files of this type!  /  Nuk mund te ngarkoni fajlla te llojit te tille!";
                 header("location: index.php?error=$em");
             }
         }

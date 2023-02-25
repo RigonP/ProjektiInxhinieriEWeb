@@ -6,7 +6,7 @@ $database = "user_db";
 
 
 //Lidhja me databaze
-$connection = new mysqli($severname, $username, $password, $database);
+$connection = mysqli_connect($severname, $username, $password, $database);
 
 $id = "";
 $emri = "";
@@ -59,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
         $result = $connection->query($sql);
     
         if (!$result) {
-            $errorMessage = "Invalid query: " . $connection->error;
+            $errorMessage = "Query jo valid : " . $connection->error;
             break;
         }
     
