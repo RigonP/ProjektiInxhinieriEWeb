@@ -1,4 +1,4 @@
-# ProjektiInxhinieriEWeb
+# Hospital Management System
 Projekti në lëndën "Inxhineri e Web". 
 
 Profesor: Msc.Ramiz Hoxha. 
