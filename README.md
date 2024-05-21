@@ -1,12 +1,8 @@
 # Hospital Management System
-Projekti në lëndën "Inxhineri e Web". 
 
-Profesor: Msc.Ramiz Hoxha. 
-Asistente: can. Msc Greta Ahma
+The project called "ProDoc" is designed for a type of clinic / hospital that will facilitate the work of administrators, but also simple users. Since the website is in one form or another communicative with the user and offers easy access to the resources we have provided.
 
-Projekti i quajtur "ProDoc"  është krijuar për një lloj klinike / spitali që do t'ua lehtësoj punën administratorëve, por edhe përdoruesve të thjeshtë. Pasi webfaqja është në një formë ose një tjetër komunikative me përdoruesin dhe ofron qasje të lehtë në resurset që kemi ofruar. 
-
-Projekti është realizuar me:
+The project was realized with:
 *HTML
 *CSS
 *PHP
